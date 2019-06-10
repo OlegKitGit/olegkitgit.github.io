@@ -208,6 +208,18 @@ nav a:hover {
     .oldie nav a {
         margin: 0 0.7%;
     }
+
+    .sign {
+        width:25%;
+        float:left;
+        margin:0px;
+        text-align:center;
+        padding:0 12%;
+   }
+
+    #sign_right {
+        float:right;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -221,6 +233,18 @@ nav a:hover {
         -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
+
+    .sign {
+        width:25%;
+        float:left;
+        margin:0px;
+        text-align:center;
+        padding:0 12%;
+   }
+
+    #sign_right {
+        float:right;
+}
     }
 
 /* ============
@@ -261,6 +285,19 @@ nav a:hover {
         width: 1126px; /* 1140px - 10% for margins */
         margin: 0 auto;
     }
+
+    .sign {
+        width:25%;
+        float:left;
+        margin:0px;
+        text-align:center;
+        padding:0 12%;
+   }
+
+    #sign_right {
+        float:right;
+}
+
 }
 
 /* ==========================================================================
@@ -377,20 +414,4 @@ nav a:hover {
 
 #founders {
     text-align: center;
-}
-
-.sign {
-    width:25%;
-    float:left;
-    margin:0px;
-    text-align:center;
-    padding:0 12%;
-   }
-
-#sign_right {
-    float:right;
-}
-
-.sign figcaption {
-  
 }
