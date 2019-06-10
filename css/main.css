@@ -210,15 +210,11 @@ nav a:hover {
     }
 
     .sign {
-        width:25%;
-        float:left;
-        margin:0px;
-        text-align:center;
-        padding:0 12%;
+        display: block;
    }
 
     #sign_right {
-        float:right;
+        display: block;
     }
 }
 
@@ -235,15 +231,11 @@ nav a:hover {
                 box-shadow: 0 5px 10px #aaa;
 
     .sign {
-        width:25%;
-        float:left;
-        margin:0px;
-        text-align:center;
-        padding:0 12%;
+        display: block;
    }
 
     #sign_right {
-        float:right;
+        display: block;
 }
     }
 
