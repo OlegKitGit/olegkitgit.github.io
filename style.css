@@ -4,7 +4,6 @@ body {
     text-align: justify;
     background: url(images/background.png) repeat-y center;
 	background-color: #F0ECD6;
-
 }
 
 .menu {
@@ -16,7 +15,7 @@ body {
 
 #menu {
     text-align: center;
-    padding: 20px;
+    padding: 180px 20px 20px 20px;
 }
 
 #menu2 {
@@ -25,7 +24,10 @@ body {
 }
 
 #text {
-    text-align: center;
+    text-align: justify;
+    width: 723px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #translation {
@@ -34,4 +36,33 @@ body {
 
 textarea {
     background-color: #f7ce9e;
+}
+
+#new{
+    margin-left: 0px;
+}
+
+#URL{
+    width: auto;
+    height: 55px;
+    display:none;
+    background-color: white;
+    color: #222
+}
+
+#URL_adress {
+    margin: 5px;
+}
+
+.picture {
+    cursor: pointer;
+    border-bottom: 1px dashed;
+}
+
+
+#picture {
+    width: auto;
+    height: auto;
+    display:none;
+    background-color: white;
 }
