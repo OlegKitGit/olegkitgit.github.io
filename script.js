@@ -1,6 +1,15 @@
 $("#insert").click(function() {
-    let insert_text = $("textarea").val();
-    $("#text").html(insert_text);
+    let insert_text_original = $("#text_original").val();
+    let insert_text_translation = $("#text_translation").val();
+    if (insert_text_translation){
+        $("#translation").html(insert_text_translation);
+        $('#text_translation').hide();
+        $("#text").hide();
+        $("#translation").show();
+    }
+    else {  
+        $("#text").html(insert_text_original);
+    } 
 });
 
 
@@ -34,14 +43,25 @@ $("#text").on("mouseenter",
     image_width = $('#picture').width();
     image_height = $('#picture').height();
     $('#picture').css({position: 'absolute', left: e.pageX - image_width/2, top: e.pageY - image_height - 10}).show();
-   /* $('#picture').css({position: 'absolute', left: e.pageX - image_width/2, top: e.pageY - image_height - 100}).show().animate({opacity: "show", top: "0"}, "fast");; */ 
-/*    $('#picture').show( "slow", function() {
-       
-    }); */
 });
 
 $("#text").on("mouseleave", 
   ".picture", function() {
    $('#picture').css({ width: 'auto'}).hide();
-    /* $('#picture').css({width: 'auto'}).animate({opacity: "hide"}, "fast").hide() */
+});
+
+
+$("#translate").click(function() {
+    if ($('#translation').css("display") === 'none' && $('#text_translation').css("display") === 'none' && $('#text').css("display") === 'block' && $('#translation').text().length === 5){
+        $('#text_translation').show();
+    }
+    else if ($('#translation').css("display") === 'block' && $('#text').css("display") === 'none'){
+        $('#translation').hide();
+        $('#text').show()
+    }
+    else if ($('#translation').css("display") === 'none' && $('#text_translation').css("display") === 'none' && $('#text').css("display") === 'block' && $('#translation').text().length > 0){
+        $('#text').hide();
+        $('#translation').show()
+    } 
+
 });
