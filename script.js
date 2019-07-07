@@ -1,3 +1,28 @@
+jQuery.fn.center = function () {
+    this.css("position","absolute");
+    this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + 
+                                                $(window).scrollTop()) + "px");
+    this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
+                                                $(window).scrollLeft()) + "px");
+    return this;
+}
+
+var img_object = new Object();
+var img_index = 0
+
+    
+$("#picture").on("click", "#reply", function() {
+    if (Object.keys(img_object)[img_index] === $("#answer").val()){
+        alert("Ok!")
+        img_index++;
+        if (img_index != Object.keys(img_object).length) {       
+            $('#picture').html('<img id="test_image" src=' + img_object[Object.keys(img_object)[img_index]] + '><p><label for="answer">Word</label><input type="text" id="answer"><button type="button" id="reply">Reply</button> </p>');
+        }    
+    }
+});
+
+
+
 $("#insert").click(function() {
     let insert_text_original = $("#text_original").val();
     let insert_text_translation = $("#text_translation").val();
@@ -65,3 +90,19 @@ $("#translate").click(function() {
     } 
 
 });
+
+$("#test").click(function() {
+    if ($(".picture").length){
+        $("#test_div").show();
+        $("#picture").show();
+        $("#picture").css({zIndex: 5});
+        $("#picture").center();
+        $(".picture").each(function(index) {
+            if (index === 0){
+                $('#picture').html('<img id="test_image" src=' + $(this).attr("adress") + '><p><label for="answer">Word</label><input type="text" id="answer"><button type="button" id="reply">Reply</button> </p>');
+            }
+            img_object[$(this).text()] = $(this).attr("adress")
+        });
+    };    
+});
+
