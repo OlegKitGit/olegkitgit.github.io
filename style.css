@@ -24,7 +24,7 @@ body {
 }
 
 
-text_and_translation {
+#text_and_translation {
     text-align: justify;
     width: 723px;
     margin-left: auto;
@@ -67,12 +67,20 @@ text_and_translation {
     margin-left: 0px;
 }
 
+
+#URL_container{
+    text-align: center;
+}
+
+
 #URL{
     width: auto;
-    height: 55px;
+    height: 155px;
     display:none;
     background-color: white;
-    color: #222
+    color: #222;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #URL_adress {
