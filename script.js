@@ -44,30 +44,36 @@ $("#attach").on("click", function() {
     } 
     else{
         $('#URL').css({ display: 'block', width: '200px'});
+        $("#word").val('');
+        $("#URL_adress").val('');
+        $("#word_translation").val('');
     }
-    $("#attach_picture").on("click", function(){
-        if ($("#word").val() &&  $("#URL_adress").val()){
+});
+
+$("#attach_picture").on("click", function(){
+    if ($("#word").val() &&  $("#URL_adress").val() && $("#word_translation").val()){
         txt = $("#word").val();
+        translation_txt = $("#word_translation").val()
         text_string = $("#text").html()
         re = new RegExp(txt, 'g');
-        new_text_string = text_string.replace(re, "<span  class='picture' adress=" + $("#URL_adress").val() + "><strong>" + txt + "</strong></span>")
+        new_text_string = text_string.replace(re, "<span  class='picture' translation='" + translation_txt + "' adress=" + $("#URL_adress").val() + "><strong>" + txt + "</strong></span>")
         document.getElementById('text').innerHTML = new_text_string;
-        };
-    });
+    };
 });
 
 $("#text").on("mouseenter", 
   ".picture", function(e) {
-    image_width = $('#picture').width();
-    image_height = $('#picture').height();
-    $('#picture').css({position: 'absolute', left: e.pageX - image_width/2, top: e.pageY - image_height - 10});
     $('#picture').html('<img src=' + $(this).attr("adress") + '>');
-    $('#picture').show();
+    $('#translation_div').text($(this).attr("translation"));
+    image_width = $('#picture_container').width();
+    image_height = $('#picture_container').height();
+    $('#picture_container').css({position: 'absolute', left: e.pageX - image_width/2, top: e.pageY - image_height - 15});
+    $('#picture_container').show();
 });
 
 $("#text").on("mouseleave", 
   ".picture", function() {
-   $('#picture').css({ width: 'auto'}).hide();
+   $('#picture_container').css({ width: 'auto'}).hide();
 });
 
 
@@ -83,7 +89,9 @@ $("#translate").click(function() {
         $('#text').hide();
         $('#translation').show()
     } 
-
+    else if ($('#text_translation').css("display") === 'inline-block'){
+        $('#text_translation').hide();
+    }
 });
 
 $("#test").click(function() {
@@ -101,3 +109,35 @@ $("#test").click(function() {
     };    
 });
 
+$("#t2im").click(function() {
+    if ($(".picture").length){
+        document.getElementById("text_visualisation_div").innerHTML = '<div id="images_line_0"></div>';
+        reg = /=(["])(?:(?=(\\?))\2.)*?\1|(\. )/g
+        text_string = $("#text").html()
+        let found = text_string.match(reg);
+        let arrayLength = found.length;
+        let counter = 0;
+        let div_counter = 0;
+        let image_counter = 0; 
+        for (let i = 0; i < arrayLength; i++) {
+            if (found[i] === '="picture"'){ 
+                continue;    
+            }
+            else if (found[i] === '. '){
+                div_counter += 1;
+                $("#text_visualisation_div").append('<div id="images_line_' + div_counter.toString() + '"></div>');
+            }
+            else if (counter === 0){
+                console.log(found[i].slice(2,-1));
+                $("#images_line_" + div_counter.toString() + "").append('<figure class="sign"><span id="image_' + image_counter.toString() + '"></span><figcaption>' + found[i].slice(2,-1) + '</figcaption></figure>');
+                counter = 1
+            }
+            else if (counter === 1){
+                console.log(found[i].slice(2,-1));
+                $("#image_" + image_counter.toString() + "").html('<img class="images" src=' + found[i].slice(2,-1) + '></img>')
+                counter = 0
+                image_counter +=1
+            }
+        }
+    };    
+});

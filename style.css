@@ -75,7 +75,7 @@ body {
 
 #URL{
     width: auto;
-    height: 155px;
+    height: 190px;
     display:none;
     background-color: white;
     color: #222;
@@ -96,10 +96,27 @@ body {
 #picture {
     width: auto;
     height: auto;
+/*     display:none; */
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#picture_container {
+    width: auto;
+    height: auto;
     display:none;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
+}
+
+#translation_div {
+    width: auto;
+    height: 20px;
+    text-align: center;
+    font-weight: 900;
+    margin: 5px;
 }
 
 #test_div{
