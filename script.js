@@ -55,9 +55,12 @@ $("#attach_picture").on("click", function(){
         txt = $("#word").val();
         translation_txt = $("#word_translation").val()
         text_string = $("#text").html()
-        re = new RegExp(txt, 'g');
-        new_text_string = text_string.replace(re, "<span  class='picture' translation='" + translation_txt + "' adress=" + $("#URL_adress").val() + "><strong>" + txt + "</strong></span>")
+        re = new RegExp('\\s' + txt, 'g');
+        new_text_string = text_string.replace(re, " <span  class='picture' translation='" + translation_txt + "' adress=" + $("#URL_adress").val() + "><strong>" + txt + "</strong></span>")
         document.getElementById('text').innerHTML = new_text_string;
+        $("#word").val('');
+        $("#URL_adress").val('');
+        $("#word_translation").val('');
     };
 });
 
