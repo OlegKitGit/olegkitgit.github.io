@@ -9,7 +9,7 @@ var h,f,l,d=String.fromCharCode;t.exports={version:"2.1.2",encode:a,decode:u}},f
 //# sourceMappingURL=socket.io.js.map
 
 $(function () {
-var socket = io.connect('https://thepsychemirror.xyz:5000');
+var socket = io.connect('http://thepsychemirror.xyz:5000');
 $('form').submit(function(e){
   e.preventDefault(); // prevents page reloading
   socket.emit('chat message', $('#m').val());
