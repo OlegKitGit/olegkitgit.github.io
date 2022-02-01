@@ -234,7 +234,7 @@ GS.dataCache['2C26A99BK03D7A4EC4SAA29EE1DB000A7E1E'] = {
                     "y": 0
                 }
             },
-            "gameTitle": "NIna",
+            "gameTitle": "Nina3",
             "resolution": 720,
             "diagonalMovement": true,
             "menuCursorUpSound": {
@@ -316,10 +316,11 @@ GS.dataCache['2C26A99BK03D7A4EC4SAA29EE1DB000A7E1E'] = {
                     "name": ""
                 }
             ],
-            "useIntroScene": true,
+            "useIntroScene": false,
             "introInfo": {
                 "scene": {
-                    "uid": "4824B5B0112CE8424C58CE1196D37A9C3E48"
+                    "uid": "3305C56CKBF5BA44BFS8614EE4B277E49F6A",
+                    "name": "Sample Scene"
                 }
             },
             "textInputPages": [
@@ -378,7 +379,7 @@ GS.dataCache['2C26A99BK03D7A4EC4SAA29EE1DB000A7E1E'] = {
                     "script": "return { x: (Graphics.width - object.dstRect.width * object.zoom.x) / 2, y: (Graphics.height - object.dstRect.height * object.zoom.y) / 2  }"
                 }
             ],
-            "gameUid": "BC6EB82B89ACF14143580C0465133F7F862C"
+            "gameUid": "311C26264C93684CB73B40C6D40ADE77AD62"
         },
         "id": "2C26A99BK03D7A4EC4SAA29EE1DB000A7E1E",
         "parentId": "ROOT",

@@ -3,7 +3,13 @@ GS.dataCache['RESOURCES'] = {
     "items": {
         "type": "resource_table",
         "resources": {
-            "Graphics/Backgrounds/logo_white_background": ".jpg",
+            "Graphics/Characters/JaneDate_Normal": ".png",
+            "Graphics/Backgrounds/Bench_Morning": ".png",
+            "Graphics/Backgrounds/Moonlight": ".png",
+            "Graphics/Pictures/Home": ".png",
+            "Graphics/Pictures/HomeThumb": ".png",
+            "Graphics/Pictures/game_cards": ".png",
+            "Graphics/Pictures/ui_back": ".png",
             "Graphics/Pictures/m-arrow": ".png",
             "Graphics/Pictures/m-arrow-disabled": ".png",
             "Graphics/Pictures/m-diamond-large-off": ".png",
@@ -32,6 +38,33 @@ GS.dataCache['RESOURCES'] = {
             "Graphics/Icons/Germany": ".png",
             "Graphics/Icons/Japan": ".png",
             "Graphics/Icons/United-Kingdom": ".png",
+            "Graphics/Masks/HeartB": ".png",
+            "Graphics/Masks/Splotches_Ver2": ".png",
+            "Graphics/Masks/Splotches": ".png",
+            "Graphics/Masks/Star_Square_Ver2": ".png",
+            "Graphics/Masks/Star_Ver2": ".png",
+            "Graphics/Masks/Rect_Ver2": ".png",
+            "Graphics/Masks/Heart_Ver2": ".png",
+            "Graphics/Masks/Dissolve_Ver2": ".png",
+            "Graphics/Masks/Circle_Square_Ver2": ".png",
+            "Graphics/Masks/Circle_Ver2": ".png",
+            "Graphics/Masks/Circle": ".png",
+            "Graphics/Masks/Circle_Square": ".png",
+            "Graphics/Masks/Heart_Square": ".png",
+            "Graphics/Masks/Dissolve": ".png",
+            "Graphics/Masks/Rect": ".png",
+            "Graphics/Masks/Star_Square": ".png",
+            "Graphics/Masks/Star": ".png",
+            "Graphics/Masks/Heart": ".png",
+            "Graphics/Masks/Blinds_V": ".png",
+            "Graphics/Masks/Blinds_Hor": ".png",
+            "Graphics/Masks/HeartB_Ver2": ".png",
+            "Audio/Music/Competitive_-_Fired_Up2": [
+                ".m4a"
+            ],
+            "Audio/Music/Tutorial_-_Good_Mood": [
+                ".ogg"
+            ],
             "Audio/Sounds/choice_cancel_02": [
                 ".ogg"
             ],
@@ -77,7 +110,28 @@ GS.dataCache['RESOURCES'] = {
             "Audio/Sounds/choice_cancel_01": [
                 ".ogg"
             ],
-            "Movies/film": [
+            "Movies/lrain.webmhd": [
+                ".webm"
+            ],
+            "Movies/fog.webmhd": [
+                ".webm"
+            ],
+            "Movies/rays.webmhd": [
+                ".webm"
+            ],
+            "Movies/rain2.webmhd": [
+                ".webm"
+            ],
+            "Movies/snow.webmhd": [
+                ".webm"
+            ],
+            "Movies/rain1-white.webmhd": [
+                ".webm"
+            ],
+            "Movies/rain1.webmhd": [
+                ".webm"
+            ],
+            "Movies/blizzard.webmhd": [
                 ".webm"
             ]
         }

@@ -7,15 +7,16 @@ GS.dataCache['07DDA1E133116330'] = {
         "type": "global_variables",
         "numbers": [
             {
-                "name": "",
+                "name": "Player Points",
                 "scope": 1,
                 "index": 0,
                 "changed": true
             },
             {
-                "name": "My Other Var X",
+                "name": "Card",
                 "scope": 1,
-                "index": 1
+                "index": 1,
+                "changed": true
             },
             {
                 "name": "",
@@ -23,9 +24,10 @@ GS.dataCache['07DDA1E133116330'] = {
                 "scope": 1
             },
             {
-                "name": "",
+                "name": "Dealer Points",
                 "index": 3,
-                "scope": 1
+                "scope": 1,
+                "changed": true
             },
             {
                 "name": "",
@@ -623,22 +625,22 @@ GS.dataCache['07DDA1E133116330'] = {
         "booleansSizeChanged": false,
         "lists": [
             {
-                "name": "My List",
+                "name": "Cards",
                 "index": 0,
                 "scope": 1
             },
             {
-                "name": "Other List",
+                "name": "Player Cards",
                 "index": 1,
                 "scope": 1
             },
             {
-                "name": "",
+                "name": "Dealer Cards",
                 "index": 2,
                 "scope": 1
             },
             {
-                "name": "",
+                "name": "Card Values",
                 "index": 3,
                 "scope": 1
             },

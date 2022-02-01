@@ -3,7 +3,7 @@ GS.dataCache['SUMMARIES'] = {
     "items": {
         "07DD30D15041E0DE": {
             "items": {
-                "name": "Nina",
+                "name": "Nina3",
                 "type": "project",
                 "version": "1.0.1033"
             }
@@ -298,13 +298,6 @@ GS.dataCache['SUMMARIES'] = {
                 "order": 0
             }
         },
-        "5FDD1950K9FA1A4BCCSB00CEE54C8BC8AE54": {
-            "items": {
-                "name": "Unnamed",
-                "type": "data_record",
-                "order": 1
-            }
-        },
         "2C26A99BK03D7A4EC4SAA29EE1DB000A7E1E": {
             "items": {
                 "name": "System",
@@ -542,7 +535,7 @@ GS.dataCache['SUMMARIES'] = {
         },
         "BA77A09EK7F14A4C2BSA11BE8CC099F00810": {
             "items": {
-                "name": "Unnamed",
+                "name": "Narrator",
                 "type": "data_record",
                 "order": 0
             }
@@ -813,6 +806,22 @@ GS.dataCache['SUMMARIES'] = {
                 "order": 9
             }
         },
+        "3EB0897BK4EAAA43A8SA91DEE65923801AB3": {
+            "items": {
+                "name": "Chapter 1",
+                "type": "vn.chapter",
+                "order": 1
+            }
+        },
+        "3305C56CKBF5BA44BFS8614EE4B277E49F6A": {
+            "items": {
+                "name": "Sample Scene",
+                "type": "vn.scene",
+                "parentId": "3EB0897BK4EAAA43A8SA91DEE65923801AB3",
+                "chapterUid": "3EB0897BK4EAAA43A8SA91DEE65923801AB3",
+                "order": 0
+            }
+        },
         "310BAD46K234CA48DBSABF0EE1601511F062": {
             "items": {
                 "name": "Component_MessageBehavior",
@@ -1065,7 +1074,7 @@ GS.dataCache['SUMMARIES'] = {
         },
         "D57FE083K6CB3A442ASA89FE801CDE46C44A": {
             "items": {
-                "name": "Unnamed",
+                "name": "Girl's Room",
                 "type": "data_record",
                 "order": 0
             }
@@ -2561,6 +2570,13 @@ GS.dataCache['SUMMARIES'] = {
                 "type": "event_command"
             }
         },
+        "D817084774AB154CCE68B7B2587B0058EBFA": {
+            "items": {
+                "name": "Jane",
+                "type": "data_record",
+                "order": 5
+            }
+        },
         "3A78BF4E122004444629EDF41AD5ABD03B9C": {
             "items": {
                 "name": "Resource Processors",
@@ -2670,6 +2686,27 @@ GS.dataCache['SUMMARIES'] = {
                 "order": 0
             }
         },
+        "4B3149DB47771149E70AFCB4D22C5B7ADAD9": {
+            "items": {
+                "name": "Jane",
+                "type": "data_record",
+                "order": 4
+            }
+        },
+        "A6B5C27139C7074A5F493090AC98EF6558FC": {
+            "items": {
+                "name": "Date",
+                "type": "data_record",
+                "order": 0
+            }
+        },
+        "FD6A75D59550E84C9419CAF77241596B1B02": {
+            "items": {
+                "name": "Normal",
+                "type": "data_record",
+                "order": 6
+            }
+        },
         "7FC49F902D96C645282B4CA923D4F357013B": {
             "items": {
                 "name": "Template_SettingsMenuSlider",
@@ -2752,6 +2789,48 @@ GS.dataCache['SUMMARIES'] = {
             "items": {
                 "name": "__TRANSLATION_HELP",
                 "type": "custom_view"
+            }
+        },
+        "1BB324253E74D2496F3827B9C8D8B161D47B": {
+            "items": {
+                "name": "Create Deck",
+                "type": "data_record",
+                "order": 0
+            }
+        },
+        "C48CA8CE6407B340821B8DF36A5071A28872": {
+            "items": {
+                "name": "Draw Player Card",
+                "type": "data_record",
+                "order": 1
+            }
+        },
+        "F2C0CB484B7984427C498166E3B8869CB08C": {
+            "items": {
+                "name": "Draw Dealer Card",
+                "type": "data_record",
+                "order": 2
+            }
+        },
+        "03CDEA812BBAF3462489C9660D201864D4E3": {
+            "items": {
+                "name": "Show Player Card",
+                "type": "data_record",
+                "order": 3
+            }
+        },
+        "1B8615242174F649486891095B3710889F58": {
+            "items": {
+                "name": "Show Dealer Card",
+                "type": "data_record",
+                "order": 4
+            }
+        },
+        "F3A2BB09608241476D6A14E5734C934B7AD7": {
+            "items": {
+                "name": "Reset Game",
+                "type": "data_record",
+                "order": 6
             }
         },
         "D7D757A4716B16447D5A533336EBFC4665F7": {
@@ -2863,6 +2942,13 @@ GS.dataCache['SUMMARIES'] = {
                 "type": "event_command"
             }
         },
+        "9DD31B69556541401B1BFF2964349D21006C": {
+            "items": {
+                "name": "Show Game Result",
+                "type": "data_record",
+                "order": 5
+            }
+        },
         "613817565CED434E2F3AF0808662C3BAEF91": {
             "items": {
                 "name": "Component_IntervalTimer",
@@ -2965,6 +3051,20 @@ GS.dataCache['SUMMARIES'] = {
                 "type": "game_script"
             }
         },
+        "49738AEB1E5AE24DEE4AD903FEA2BCEA2443": {
+            "items": {
+                "name": "Black Jack",
+                "type": "data_record",
+                "order": 8
+            }
+        },
+        "EA262EC363CD654F3D9937A00800F3E0D003": {
+            "items": {
+                "name": "Define Card Values",
+                "type": "data_record",
+                "order": 8
+            }
+        },
         "EA42D2D7212A33408C39AF1582CA441BF8A1": {
             "items": {
                 "name": "Object_MessageArea",
@@ -2981,22 +3081,6 @@ GS.dataCache['SUMMARIES'] = {
             "items": {
                 "name": "Component_CallSceneInterpreter",
                 "type": "game_script"
-            }
-        },
-        "5D57801D4893724A103958C956C086AFFA62": {
-            "items": {
-                "name": "Sait",
-                "type": "vn.chapter",
-                "order": 1
-            }
-        },
-        "4824B5B0112CE8424C58CE1196D37A9C3E48": {
-            "items": {
-                "name": "Main",
-                "type": "vn.scene",
-                "parentId": "5D57801D4893724A103958C956C086AFFA62",
-                "chapterUid": "5D57801D4893724A103958C956C086AFFA62",
-                "order": 0
             }
         }
     }
