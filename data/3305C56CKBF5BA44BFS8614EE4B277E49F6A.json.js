@@ -51,7 +51,7 @@ GS.dataCache['3305C56CKBF5BA44BFS8614EE4B277E49F6A'] = {
                 "id": "vn.ChangeBackground",
                 "params": {
                     "graphic": {
-                        "name": "Bench_Morning",
+                        "name": "Moonlight",
                         "hue": 0,
                         "opacity": 255,
                         "blending": 0,
