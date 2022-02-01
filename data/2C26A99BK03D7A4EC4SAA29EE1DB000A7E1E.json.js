@@ -316,11 +316,10 @@ GS.dataCache['2C26A99BK03D7A4EC4SAA29EE1DB000A7E1E'] = {
                     "name": ""
                 }
             ],
-            "useIntroScene": false,
+            "useIntroScene": true,
             "introInfo": {
                 "scene": {
-                    "uid": "3305C56CKBF5BA44BFS8614EE4B277E49F6A",
-                    "name": "Sample Scene"
+                    "uid": "3305C56CKBF5BA44BFS8614EE4B277E49F6A"
                 }
             },
             "textInputPages": [
